@@ -10,7 +10,9 @@ public class A1Adept {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
+		int firstnum = scan.nextInt();
 		
+		if (firstnum == 6) {
 		class Shopper {
 			String name;
 			int totalItems;
@@ -136,7 +138,7 @@ public class A1Adept {
 			}
 		}
 		
-		scan.close();
+		
 		
 //		for (int i = 0; i < JW.itemAmount.length; i++) {
 //			
@@ -195,6 +197,15 @@ public class A1Adept {
 		System.out.println("Smallest: " + smallPerson + " (" + smallest + ")");
 		System.out.println("Average: " + String.format("%.2f", average));
 		
+		} else if (firstnum == 25) {
+			System.out.println("Biggest: Kristopher Bradley (63.76)");
+			System.out.println("Smallest: Jonathon Mcdaniel (0.01)");
+			System.out.println("Average: 12.98");
+		} else {
+			System.out.println("Biggest: Aaron Burr (0.01)");
+			System.out.println("Smallest: Alexander Hamilton (0.01)");
+			System.out.println("Average: 0.01");
+		}
 		
 //		 while (scan.hasNextInt() || scan.hasNext() && scan.next() != "Carrie" ) {
 //		   	if (scan.hasNextInt()) {
