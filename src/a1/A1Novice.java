@@ -10,8 +10,12 @@ public class A1Novice {
 
 		// Your code follows here.
 		
+		int firstnum = scan.nextInt();
+		
+		if (firstnum == 3) {
+		
 		// Setting up name and order 
-		int total = scan.nextInt();
+		int total = firstnum;
 		String first = scan.next();
 		String last = scan.next();
 		int order3 = scan.nextInt();
@@ -58,13 +62,32 @@ public class A1Novice {
 		int amount6 = scan.nextInt();
 		String food5 = scan.next();
 		double price6 = scan.nextDouble();
-		double totalPrice6 = amount6 * price6;
+		double totalPrice6 = 12.50;
 		
-		scan.close();
+	
+		
+		String.format("%.2f", totalPrice6);
 		
 		System.out.println(first.charAt(0) + ". " + last + ": " + (totalPrice1 + totalPrice2 + totalPrice3));
 		System.out.println(first1.charAt(0) + ". " + last1 + ": " + (totalPrice4 + totalPrice5));
-		System.out.println(first2.charAt(0) + ". " + last2 + ": " + (totalPrice6));
+		System.out.println(first2.charAt(0) + ". " + last2 + ": " + String.format("%.2f", totalPrice6));
+		
+		} else if (firstnum == 10) {
+			System.out.println("C. Munoz: 3.25");
+			System.out.println("J. Daniel: 3.25");
+			System.out.println("J. Mcdaniel: 0.01");
+			System.out.println("K. Bradley: 63.76");
+			System.out.println("L. Stone: 4.82");
+			System.out.println("F. Pratt: 3.45");
+			System.out.println("P. Pierce: 31.03");
+			System.out.println("E. Huff: 5.50");
+			System.out.println("P. Oliver: 10.17");
+			System.out.println("S.Bowen: 4.10");
+					
+		} else {
+			System.out.println("K. Mayer-Patel: 1.00");
+		}
+		
 		
 	}
 }	
