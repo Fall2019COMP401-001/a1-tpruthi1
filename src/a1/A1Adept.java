@@ -191,7 +191,7 @@ public class A1Adept {
 		
 		
 //		System.out.println(CB.totalPrice + " " + CT.totalPrice + " " + JW.totalPrice);
-		System.out.println("Biggest: " + bigPerson + " (" + biggest + ")");
+		System.out.println("Biggest: " + bigPerson + " (" + String.format("%.2f", biggest) + ")");
 		System.out.println("Smallest: " + smallPerson + " (" + smallest + ")");
 		System.out.println("Average: " + String.format("%.2f", average));
 		
