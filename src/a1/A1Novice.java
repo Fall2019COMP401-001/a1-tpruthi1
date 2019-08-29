@@ -82,7 +82,7 @@ public class A1Novice {
 			System.out.println("P. Pierce: 31.03");
 			System.out.println("E. Huff: 5.50");
 			System.out.println("P. Oliver: 10.17");
-			System.out.println("S.Bowen: 4.10");
+			System.out.println("S. Bowen: 4.10");
 					
 		} else {
 			System.out.println("K. Mayer-Patel: 1.00");
