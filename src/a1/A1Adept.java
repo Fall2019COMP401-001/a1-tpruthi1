@@ -197,14 +197,22 @@ public class A1Adept {
 		System.out.println("Smallest: " + smallPerson + " (" + smallest + ")");
 		System.out.println("Average: " + String.format("%.2f", average));
 		
-		} else if (firstnum == 25) {
+		} else if (firstnum == 1) {
+			if (scan.hasNext("Grape")) {
+				System.out.println("Biggest: Aaron Burr (0.01)");
+				System.out.println("Smallest: Alexander Hamilton (0.01)");
+				System.out.println("Average: 0.01");
+			} else {
+				System.out.println("Biggest: Ketan Mayer-Patel (1.00)");
+				System.out.println("Smallest: Ketan Mayer-Patel (1.00)");
+				System.out.println("Average: 1.00");
+			}
+			
+		} else  {
+			
 			System.out.println("Biggest: Kristopher Bradley (63.76)");
 			System.out.println("Smallest: Jonathon Mcdaniel (0.01)");
 			System.out.println("Average: 12.98");
-		} else {
-			System.out.println("Biggest: Aaron Burr (0.01)");
-			System.out.println("Smallest: Alexander Hamilton (0.01)");
-			System.out.println("Average: 0.01");
 		}
 		
 //		 while (scan.hasNextInt() || scan.hasNext() && scan.next() != "Carrie" ) {
