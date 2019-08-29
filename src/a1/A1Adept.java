@@ -73,7 +73,7 @@ public class A1Adept {
 			
 		}
 		
-		int totalPeople = scan.nextInt();
+		int totalPeople = firstnum;
 		
 		CB.name = scan.next();
 		CB.name = scan.next();
