@@ -63,26 +63,38 @@ public class A1Jedi {
 		
 		int[] whoGot = new int[count];
 		
+		
 		for (int k = 0; k<people; k++) {
 			if (scan.hasNext()) {
 				firstn[k] = scan.next();
 				lastn[k] = scan.next();
 				int numItems = scan.nextInt();
+				boolean alreadyExecuted = false;
 				for (int m=0; m < numItems; m++) {
 					int countOfItems = scan.nextInt();
 					String temp = scan.next();
 					for (int n = 0; n < count; n++) {
 						if (itemss[n].equals(temp)) {
 							counter[n] = counter[n] + countOfItems;
-							whoGot[n]++;
-						}
+							if (!alreadyExecuted) {
+								whoGot[n]++;
+								alreadyExecuted = true;
+							}
+							
+						
 					}
 				}
 				
 			}
 		}
 		
+		}
 		
+		for(int w = 0;w<count;w++) {
+			if (counter[w]!=0 && whoGot[w]==0) {
+				whoGot[w] = 1;
+			}
+		}
 		
 		for (int y=0; y<count;y++) {
 			if (counter[y] == 0) {
