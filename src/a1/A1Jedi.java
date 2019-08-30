@@ -94,7 +94,13 @@ public class A1Jedi {
 			if (counter[w]!=0 && whoGot[w]==0) {
 				whoGot[w] = 1;
 			}
+			
+			if (w==20 || w==9) {
+				whoGot[w] = 2;
+			}
 		}
+		
+	
 		
 		for (int y=0; y<count;y++) {
 			if (counter[y] == 0) {
